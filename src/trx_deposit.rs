@@ -7,8 +7,8 @@ pub struct TrxDepositSbContract {
     pub tx_id: String,
     #[prost(enumeration = "CurrencySbModel", tag = "3")]
     pub currency: i32,
-    #[prost(sint64, tag = "4")]
-    pub trx_amount: i64,
+    #[prost(uint64, tag = "4")]
+    pub amount: u64,
 }
 #[derive(Clone, Debug, PartialEq, ::prost::Enumeration)]
 pub enum CurrencySbModel {
